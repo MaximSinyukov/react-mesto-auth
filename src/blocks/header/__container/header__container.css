@@ -1,0 +1,14 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin-left: auto;
+}
+
+@media (max-width : 500px) {
+  .header__container {
+    display: none;
+    flex-direction: column;
+    order: 3;
+  }
+}

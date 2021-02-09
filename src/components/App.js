@@ -55,9 +55,14 @@ function App() {
     } else {
       if (email !== 'Войти') {
         localStorage.removeItem('token');
+        handleLoggedIn();
       }
       history.push('/signin');
     }
+  }
+
+  function handleLoggedIn() {
+    setLoggedIn(false);
   }
 
   function handleLogin(data) {
@@ -188,7 +193,7 @@ function App() {
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
-        <Header email={email} onSignOut={handleHeaderButton} />
+        <Header email={email} loggedIn={loggedIn} onSignOut={handleHeaderButton} />
         <Switch>
           <Route path="/signin">
             <Login onSetEmail={handleSetEmail} onLogin={handleLogin} />

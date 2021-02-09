@@ -1,0 +1,8 @@
+@media (max-width : 500px) {
+  .header__mobile-button_open {
+    background-image: url(../../../../images/header__close-button.svg);
+    width: 35px;
+    height: 35px;
+    margin-top: 0;
+  }
+}
