@@ -1,0 +1,5 @@
+@media (max-width : 500px) {
+  .header__mobile-button_visible {
+    display: block;
+  }
+}

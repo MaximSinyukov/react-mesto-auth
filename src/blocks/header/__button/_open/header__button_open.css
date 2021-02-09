@@ -1,0 +1,8 @@
+@media (max-width : 500px) {
+  .header__button_open {
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #a9a9a9;
+  }
+}
